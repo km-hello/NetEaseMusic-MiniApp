@@ -1,0 +1,8 @@
+<view class = "topListContainer">
+    <view class = "topListItem" wx:for="{{topList}}" wx:key="id" id="{{item.id}}" bindtap="toMusicListDetail">
+        <image src="{{item.coverImgUrl}}"></image>
+        <view class = "songContainer" >
+            <view class="songItem" wx:for="{{item.tracks}}">{{index+1}} {{item.name}}</view>
+        </view>
+    </view>
+</view>

@@ -1,0 +1,37 @@
+.container{
+    display: felx;
+}
+
+.searchItem{
+    /* height: 200rpx; */
+    display: flex;
+    flex-direction: row;
+    margin-top: 20rpx;
+    margin-left: 20rpx;
+}
+
+.searchItem image{
+    width: 150rpx;
+    height: 150rpx;
+    border-radius: 20rpx;
+}
+
+.text{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20rpx;
+}
+.name{
+    font-size: 36rpx;
+    max-width: 500rpx;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.author{
+    font-size: 30rpx;
+    max-width: 300rpx;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}

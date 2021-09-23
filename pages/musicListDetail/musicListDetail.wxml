@@ -1,0 +1,24 @@
+<view class="recommendSongsContainer">
+    <!-- 头部 -->
+    <view class="header">
+        <image src="{{musicList.imageUrl}}" mode="aspectFill" ></image>
+    </view>
+    <!-- 列表区域 -->
+    <view class="listContainer">
+        <view class="listHeader">
+            <text>{{musicList.name}}</text>
+        </view>
+    </view>
+
+    <!-- 歌曲列表 -->
+    <scroll-view class="listScroll" scroll-y>
+        <view class="scrollItem" wx:for="{{musicList.musicList}}" wx:key="musicId" bindtap="toSongDetail" data-index="{{index}}" data-song="{{item}}">
+            <image src="{{item.imageUrl}}"></image>
+            <view class="musicInfo">
+                <text class="musicName">{{item.name}}</text>
+                <text class="author">{{item.author}}</text>
+            </view>
+            <text class="iconfont icon-ziyuan"></text>
+        </view>
+    </scroll-view>
+</view>

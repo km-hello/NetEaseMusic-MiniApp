@@ -1,0 +1,9 @@
+<view class = "container">
+    <view class="searchItem" wx:for="{{searchResult}}" wx:key = "muaicId" data-index="{{index}}" data-song="{{item}}" bindtap="toSongDetail">
+        <image src="{{item.imageUrl}}"></image>
+        <view class="text">
+            <view class = "name">{{item.name}}</view>
+            <view class="author">{{item.author}}</view>
+        </view>
+    </view>
+</view>

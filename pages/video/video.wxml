@@ -1,0 +1,45 @@
+<view class="videoContainer">
+    <!-- 头部区域 -->
+    <view class="header">
+        <image src="../../asserts/images/video/video.jpg"></image>
+        <text class="search" bindtap="toSearch">搜索</text>
+        <image src="../../asserts/images/logo.png"></image>
+    </view>
+    <!-- 导航栏 -->
+    <scroll-view class="navScroll" scroll-x enable-flex> 
+        <view class="navItem" wx:for="{{videoGroupList}}" wx:key="id" >
+            <view class="navContent {{navId == item.groupId ?'active':' '}}" id="{{item.groupId}}" bindtap="changeNav">{{item.name}}</view>
+        </view>
+    </scroll-view>
+
+    <!-- 视频列表 -->
+    <scroll-view scroll-y refresher-enabled class = "videoScroll" bindrefresherrefresh="handleRefresher" refresher-triggered="{{isTriggered}}">
+        <view id="{{item.videoId}}" class="videoItem" wx:for="{{videoList}}" wx:key="videoId" >
+            <!-- 使用autoplay属性  当由图片切换视频自动播放 -->
+            <video class="common" id="{{item.videoId}}" src="{{item.videoUrl}}" poster="{{item.imageUrl}}" bindplay="handlePlay"  wx:if="{{videoId === item.videoId}}" object-fit="cover" autoplay></video> 
+            <!-- 使用image代替video优化性能 -->
+            <image class="common" src="{{item.imageUrl}}" id="{{item.videoId}}" bindtap="handlePlay" wx:else></image>
+
+            <view class="content">{{item.title}}</view>    
+            
+            <view class="footer">
+                <image class="avatar" src="{{item.creatorImageUrl}}"></image>
+                <text class="nickName">{{item.creatorName}}</text>
+                <view class="comments_praised">
+                    <text class="item">
+                        <text class="iconfont icon-xihuan"></text>
+                        <text class="count">{{item.likeCount}}</text>
+                    </text>
+                    <text class="item">
+                        <text class="iconfont icon-pinglun"></text>
+                        <text class="count">{{item.commentCount}}</text>
+                    </text>
+                    <!-- <button open-type="share" class="item btn">
+                        <text class="iconfont icon-ziyuan"></text>
+                     </button> -->
+                </view>
+            </view>
+
+        </view>
+    </scroll-view>
+</view>

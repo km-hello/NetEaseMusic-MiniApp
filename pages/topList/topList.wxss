@@ -1,0 +1,33 @@
+/* pages/topList/topList.wxss */
+
+.topListContainer{
+    padding: 20rpx 20rpx;
+}
+
+
+
+.topListItem{
+    /* border: 1rpx solid red; */
+    display: flex;
+    margin-bottom: 20rpx;
+}
+
+.topListItem image{
+    width: 250rpx;
+    height: 250rpx;
+    border-radius: 30rpx;
+}
+
+.songContainer{
+    display: flex;
+    flex-direction: column;
+    /* border: 1rpx solid black; */
+    padding-left: 20rpx;
+}
+.songItem{
+    height: 33%;
+    max-width: 300rpx;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

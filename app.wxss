@@ -1,0 +1,5 @@
+@import "/asserts/iconfont/iconfont.wxss";
+
+page{
+    height: 100%;
+}

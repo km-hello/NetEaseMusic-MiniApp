@@ -1,0 +1,30 @@
+
+.content{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.item{
+    margin-top: 20rpx;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.item image{
+    width: 300rpx;
+    height: 300rpx;
+    border-radius: 10rpx;
+}
+
+.item text{
+    font-size: 26rpx;
+    overflow: hidden;
+    max-width: 300rpx;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+}

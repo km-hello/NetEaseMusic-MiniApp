@@ -1,0 +1,8 @@
+<view class="Container">
+    <view class="content">
+        <view class = "item" wx:for="{{musicList}}" wx:key="id" id="{{item.listId}}" bindtap="toMusicListDetail">
+                <image src="{{item.imageUrl}}"></image>
+                <text>{{item.name}}</text>
+        </view>
+    </view>
+</view>

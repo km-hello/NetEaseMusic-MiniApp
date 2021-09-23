@@ -1,0 +1,77 @@
+{
+    "setting": {},
+    "condition": {
+        "plugin": {
+            "list": []
+        },
+        "game": {
+            "list": []
+        },
+        "gamePlugin": {
+            "list": []
+        },
+        "miniprogram": {
+            "list": [
+                {
+                    "name": "pages/personal/personal",
+                    "pathName": "pages/personal/personal",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "pages/login/login",
+                    "pathName": "pages/login/login",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "pages/video/video",
+                    "pathName": "pages/video/video",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "pages/recommendSongs/recommendSongs",
+                    "pathName": "pages/recommendSongs/recommendSongs",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "pages/songDetail/songDetail",
+                    "pathName": "pages/songDetail/songDetail",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "pages/search/search",
+                    "pathName": "pages/search/search",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "pages/musicListDetail/musicListDetail",
+                    "pathName": "pages/musicListDetail/musicListDetail",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "pages/musicList/musicList",
+                    "pathName": "pages/musicList/musicList",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "pages/topList/topList",
+                    "pathName": "pages/topList/topList",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "pages/topListDetail/topListDetail",
+                    "pathName": "pages/topListDetail/topListDetail",
+                    "scene": null
+                }
+            ]
+        }
+    }
+}
